@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform cameraContainer;
     public float minXLook; //어디까지 돌아가게 할건지
     public float maxXLook;
+    public Vector2 curXRot;
 
 
     
@@ -41,6 +42,11 @@ public class PlayerMovement : MonoBehaviour
         {
             curInputValue = Vector2.zero;
         }
+    }
+
+    public void OnLookInput(InputAction.CallbackContext context)
+    {
+        
     }
 
      private void Move()
